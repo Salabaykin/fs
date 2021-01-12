@@ -1,0 +1,58 @@
+.nav
+    &__list
+        display: flex
+        align-items: center
+        li 
+            margin-left: 70px
+            &:first-child
+                margin-left: 0
+            a 
+                color: $d-primary
+                font-size: 14px
+                line-height: 20px
+
+.main-nav
+    &__list
+        display: flex
+        justify-content: space-between
+        border-top: 2px solid $primary
+        li 
+            position: relative
+            a 
+                display: block
+                padding: 20px 23px
+                color: $txt
+                font-size: 16px
+                font-weight: 500
+                line-height: 1
+                text-transform: uppercase
+            &:hover
+                background-color: $primary
+    &__dropdown
+        display: flex
+        flex-direction: column
+        flex-wrap: wrap
+        position: absolute
+        top: 54px
+        left: 0
+        padding: 10px 20px
+        max-height: 188px
+        box-shadow: 0 0 32px rgba(3, 22, 29, 0.08)
+        background-color: #ffffff
+        li 
+            width: 210px
+            &:hover
+                background-color: #e9f2f5
+            &::after
+                content: ''
+                position: absolute
+                bottom: 0
+                width: 100%
+                height: 1px
+                background-color: #d9e7ec
+            a 
+                margin: 0 20px
+                text-transform: none
+                color: #000000
+                font-size: 16px
+                font-weight: 600
