@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Правда Цветы</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 <body>
@@ -88,23 +89,519 @@
     </header>
 
     <section class="promo">
-        <div class="promo-slider">
-            Slider
+
+        <div class="promo__container">
+            <div class="promo-slider swiper-container">
+                <div class="swiper-wrapper">
+    
+                    <div class="promo-item swiper-slide" style="
+                        background-image: url(images/main-slider/slide-1.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;"
+                    >
+                        <div class="container">
+                            <div class="promo-item__title">Нежность в каждом лепестке</div>
+                            <div class="promo-item__descr">Авторские букеты</div>
+                            <div class="promo-item__btn">
+                                <a href="#" class="btn btn--fill promo-slider__btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promo-item swiper-slide" style="
+                        background-image: url(images/main-slider/slide-1.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;"
+                    >
+                        <div class="container">
+                            <div class="promo-item__title">Нежность в каждом лепестке</div>
+                            <div class="promo-item__descr">Авторские букеты</div>
+                            <div class="promo-item__btn">
+                                <a href="#" class="btn btn--fill promo-slider__btn">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                
+                <div class="swiper-button-prev"><img src="images/icons/arrow-slider-left.svg" alt=""></div>
+                <div class="swiper-button-next"><img src="images/icons/arrow-slider-right.svg" alt=""></div>
+            </div>
+            <!-- /.promo-slider -->
         </div>
-        <!-- /.promo-slider -->
+        <!-- /.promo__container -->
+
         <div class="promo-descr">
             <h1>Доставка цветов в Оренбурге</h1>
         </div>
     </section>
     <!-- /.promo -->
 
-    <footer class="footer">
+    <section class="composite">
         <div class="container">
-            
+            <h2 class="s-title">Составные букеты</h2>
+
+            <div class="composite-slider swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-2.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__block">
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-1" value="20 см" checked>
+                                            <label for="checkbox-1"><span>Mini</span>20 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-2" value="30 см">
+                                            <label for="checkbox-2"><span>Midi</span>30 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-3" value="45 см">
+                                            <label for="checkbox-3"><span>Max</span>45 см</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-3.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__block">
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-4" value="20 см" checked>
+                                            <label for="checkbox-4"><span>Mini</span>20 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-5" value="30 см">
+                                            <label for="checkbox-5"><span>Midi</span>30 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-6" value="45 см">
+                                            <label for="checkbox-6"><span>Max</span>45 см</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-4.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__block">
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-7" value="20 см" checked>
+                                            <label for="checkbox-7"><span>Mini</span>20 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-8" value="30 см">
+                                            <label for="checkbox-8"><span>Midi</span>30 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-9" value="45 см">
+                                            <label for="checkbox-9"><span>Max</span>45 см</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-1.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__block">
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-10" value="20 см" checked>
+                                            <label for="checkbox-10"><span>Mini</span>20 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-20" value="30 см">
+                                            <label for="checkbox-20"><span>Midi</span>30 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-30" value="45 см">
+                                            <label for="checkbox-30"><span>Max</span>45 см</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.composite-slider -->
+
+            <div class="s-link">
+                <a href="#" class="btn s-link__btn">Больше букетов</a>
+            </div>
         </div>
         <!-- /.container -->
+    </section>
+    <!-- /.composite-bouquets -->
+
+    <section class="mono">
+        <div class="container">
+            <h2 class="s-title">Моно букеты</h2>
+
+            <div class="mono-slider swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-2.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__block">
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-1" value="20 см" checked>
+                                            <label for="checkbox-1">20 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-2" value="30 см">
+                                            <label for="checkbox-2">30 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-3" value="45 см">
+                                            <label for="checkbox-3">45 см</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-3.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__block">
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-4" value="20 см" checked>
+                                            <label for="checkbox-4">20 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-5" value="30 см">
+                                            <label for="checkbox-5">30 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-6" value="45 см">
+                                            <label for="checkbox-6">45 см</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-4.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__block">
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-7" value="20 см" checked>
+                                            <label for="checkbox-7">20 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-8" value="30 см">
+                                            <label for="checkbox-8">30 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-9" value="45 см">
+                                            <label for="checkbox-9">45 см</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-1.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__block">
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-10" value="20 см" checked>
+                                            <label for="checkbox-10">20 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-20" value="30 см">
+                                            <label for="checkbox-20">30 см</label>
+                                        </div>
+                                        <div class="card__item">
+                                            <input type="radio" name="radio" id="checkbox-30" value="45 см">
+                                            <label for="checkbox-30">45 см</label>
+                                        </div>
+                                    </div>
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.composite-slider -->
+
+            <div class="s-link">
+                <a href="#" class="btn btn--white s-link__btn s-link__btn--white">Больше букетов</a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.mono -->
+
+    <section class="compositions">
+        <div class="container">
+            <h2 class="s-title">композиции и корзины</h2>
+
+            <div class="composite-slider swiper-container">
+                <div class="swiper-wrapper">
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-2.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-3.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-4.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="composite-item swiper-slide">
+                        <div class="card">
+                            <div class="card__pic">
+                                <a href="#"><img src="images/card/card-1.png" alt=""></a>
+                            </div>
+                            <div class="card__wrap">
+                                <h3 class="card__title"><a href="#">Авторский букет “Гармония”</a></h3>
+                                <div class="card__price">3 500 руб.</div>
+                                <div class="card__overlay">
+                                    <div class="card__basket">
+                                        <button class="btn btn--dark card__btn">В корзину</button>
+                                        <button class="btn btn--fill card__btn">Купить в 1 клик</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- /.composite-slider -->
+
+            <div class="s-link">
+                <a href="#" class="btn s-link__btn">Все композиции</a>
+            </div>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.compositions -->
+
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="container">
+                <div class="footer__wrap">
+
+                    <div class="footer-left">
+                        <div class="logo">
+                            <img src="images/icons/logo-white.svg" alt="Правда Цветы">
+                        </div>
+                        <div class="phones">
+                            <div class="phones__title">Телефоны:</div>
+                            <div class="phones__list">
+                                <a href="tel:+73532902202">+7 (3532) 90-22-02</a>
+                                <a href="tel:+73532919119">+7 (3532) 91-91-19</a>
+                            </div>
+                        </div>
+                        <div class="footer-soc">
+                            <div class="footer-soc__item">
+                                <div class="footer-soc__icon">
+                                    <a href="https://www.instagram.com/pravdacveti_oren/" target="_blank" rel="noopener noreferrer"><img src="images/icons/instagram.svg" alt="instagram"></a>
+                                </div>
+                                <div class="footer-soc__name">
+                                    <a href="https://www.instagram.com/pravdacveti_oren/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copy">
+                            © 2020 Все права защищены.
+                        </div>
+                    </div>
+        
+                    <div class="footer-right">
+                        <div class="footer-block">
+                            <div class="footer-right__title">
+                                Информация
+                            </div>
+                            <nav class="footer-nav">
+                                <ul class="footer-nav__list">
+                                    <li><a href="#">Доставка и оплата</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">О компании</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Политика обработки персональных данных</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-block">
+                            <div class="footer-right__title">
+                                Цветы с доставкой
+                            </div>
+                            <nav class="footer-nav">
+                                <ul class="footer-nav__list">
+                                    <li><a href="#">Букеты</a></li>
+                                    <li><a href="#">Моно букеты</a></li>
+                                    <li><a href="#">Композиции и корзины</a></li>
+                                    <li><a href="#">Цветы по поводу</a></li>
+                                    <li><a href="#">Букеты по цвету</a></li>
+                                    <li><a href="#">Комнатные цветы</a></li>
+                                    <li><a href="#">Подарки</a></li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="btn footer-right__btn">Эксклюзивный букет</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
     </footer>
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>

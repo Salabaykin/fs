@@ -1,0 +1,46 @@
+.promo
+    background: $d-primary
+    &__container
+        margin: auto
+        max-width: 1530px
+    &-item
+        padding-top: 145px 
+        padding-bottom: 120px
+        &__title 
+            width: 420px
+            color: #ffffff
+            font-family: 'Oranienbaum'
+            font-size: 48px
+            line-height: 60px
+        &__descr
+            margin-top: 30px
+            color: #ffffff
+            font-size: 18px
+            line-height: 20px
+        &__btn
+            margin-top: 85px
+    &-descr
+        display: flex
+        justify-content: center
+        padding: 38px
+        background: #ffffff
+        h1 
+            font-size: 36px
+            font-weight: 300
+    &-slider
+        &__btn
+            padding-left: 80px
+            padding-right: 80px
+        .swiper-button-next:after, 
+        .swiper-button-prev:after
+            display: none
+        .swiper-button-next, 
+        .swiper-button-prev
+            width: 73px
+            height: 73px
+            border: 2px solid #f2f7f9
+            border-radius: 50%
+        .swiper-button-next
+            right: -36px
+        .swiper-button-prev
+            left: -36px

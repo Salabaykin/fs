@@ -1,13 +1,36 @@
 .btn 
     display: inline-block
-    padding: 17px 44px 16px 44px
+    padding: 14px 44px 14px 44px
     border-radius: 25px
     border: 2px solid #acc9d4
     background-color: transparent
     color: $d-primary
     font-size: 16px
     font-weight: 500
+    line-height: 1
     cursor: pointer
+    transition: all 0.2s
+    &--fill
+        background-color: $d-primary
+        border: 2px solid $d-primary
+        color: #ffffff
+        line-height: 1
+        font-size: 18px
+    &--dark
+        color: #ffffff
+        border: 2px solid #171718
+        background-color: #171718
+        &:hover
+            border: 2px solid #193b47
+            background-color: #193b47
+    &--white
+        color: #ffffff
+        border: 2px solid #ffffff
+    &:hover
+        background-color: #acc9d4
+        border: 2px solid #acc9d4
+        color: #ffffff
+
 
 .btn-basket
     position: relative
@@ -22,3 +45,48 @@
         height: 26px
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='26' viewBox='0 0 29 26'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23acc9d4' d='M19.683 5.132h8.16c.752 0 .927.236.715.965-.732 2.522-1.466 5.044-2.2 7.565-.183.628-.564.919-1.213.919H14.43c-.642 0-1.002-.259-1.213-.875-.856-2.495-1.71-4.992-2.56-7.488-.24-.7.024-1.084.76-1.086 2.755-.005 5.51-.002 8.266-.002v.002zM5.906.28c.444 1.27.892 2.549 1.337 3.828 1.474 4.24 2.95 8.478 4.414 12.722.087.253.212.307.456.307 4.744-.007 9.488-.005 14.232-.005.886 0 1.512.596 1.507 1.434-.005.815-.631 1.404-1.5 1.404-5.407 0-10.813-.004-16.22.006-.299.001-.423-.09-.52-.368-1.868-5.4-3.748-10.796-5.618-16.195-.08-.233-.176-.333-.441-.325-.733.021-1.467.01-2.2.004C.533 3.085-.076 2.491-.088 1.7-.1.896.515.264 1.344.26 2.823.251 4.302.258 5.78.26c.035 0 .07.011.126.021zM25.93 23.56a2.503 2.503 0 0 1-2.535 2.505c-1.364-.007-2.502-1.17-2.48-2.532.023-1.385 1.153-2.5 2.524-2.49a2.512 2.512 0 0 1 2.49 2.517zm-13.105-2.535c1.39.01 2.507 1.126 2.505 2.5a2.512 2.512 0 0 1-2.545 2.5c-1.406-.022-2.493-1.143-2.48-2.557.014-1.351 1.15-2.453 2.52-2.443z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
         background-repeat: no-repeat
+    &:hover
+        &::before
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29' height='26' viewBox='0 0 29 26'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23ffffff' d='M19.683 5.132h8.16c.752 0 .927.236.715.965-.732 2.522-1.466 5.044-2.2 7.565-.183.628-.564.919-1.213.919H14.43c-.642 0-1.002-.259-1.213-.875-.856-2.495-1.71-4.992-2.56-7.488-.24-.7.024-1.084.76-1.086 2.755-.005 5.51-.002 8.266-.002v.002zM5.906.28c.444 1.27.892 2.549 1.337 3.828 1.474 4.24 2.95 8.478 4.414 12.722.087.253.212.307.456.307 4.744-.007 9.488-.005 14.232-.005.886 0 1.512.596 1.507 1.434-.005.815-.631 1.404-1.5 1.404-5.407 0-10.813-.004-16.22.006-.299.001-.423-.09-.52-.368-1.868-5.4-3.748-10.796-5.618-16.195-.08-.233-.176-.333-.441-.325-.733.021-1.467.01-2.2.004C.533 3.085-.076 2.491-.088 1.7-.1.896.515.264 1.344.26 2.823.251 4.302.258 5.78.26c.035 0 .07.011.126.021zM25.93 23.56a2.503 2.503 0 0 1-2.535 2.505c-1.364-.007-2.502-1.17-2.48-2.532.023-1.385 1.153-2.5 2.524-2.49a2.512 2.512 0 0 1 2.49 2.517zm-13.105-2.535c1.39.01 2.507 1.126 2.505 2.5a2.512 2.512 0 0 1-2.545 2.5c-1.406-.022-2.493-1.143-2.48-2.557.014-1.351 1.15-2.453 2.52-2.443z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+
+.s-title
+    font-family: 'Oranienbaum'
+    font-size: 36px
+    text-align: center
+    text-transform: uppercase
+
+.s-link 
+    display: flex
+    justify-content: center
+    &__btn 
+        position: relative
+        padding: 15px 40px
+        background-color: #ffffff
+        border: 2px solid $primary
+        &::before
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: -75%
+            width: 140px
+            height: 2px
+            background-color: $primary
+        &::after
+            content: ''
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: -75%
+            width: 140px
+            height: 2px
+            background-color: $primary
+        &--white
+            border: 2px solid #ffffff
+            background-color: transparent
+            &::before, 
+            &::after
+                 background-color: #ffffff
+            &:hover
+                background-color: #ffffff
+                color: $d-primary
