@@ -2,6 +2,20 @@
     position: relative
     padding: 80px 0 60px 0
     background-color: $secondary
+    background-image: url('../images/composite-bg.svg')
+    background-repeat: no-repeat
+    background-size: 60%
+    background-position: 100% 60%
+    &::after
+        content: ''
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: 0
+        width: 299px
+        height: 344px
+        background: url('../images/composite-bg-left.svg')
+        background-repeat: no-repeat
     &::before
         content: ''
         position: absolute
@@ -14,11 +28,19 @@
     &-slider
         margin-top: 54px
         margin-bottom: 40px
-        .slick-slide
-            opacity: 1
-            visibility: hidden
-        .slick-list
-            overflow: visible
-        .composite-item.slick-slide.slick-active
-            opacity: 1
-            visibility: visible
+        // .slick-slide
+        //     // opacity: 1
+        //     // visibility: hidden
+        // .slick-list
+        //     overflow: visible
+        //     overflow-x: hidden
+        // .composite-item.slick-slide.slick-active
+        //     // opacity: 1
+        //     // visibility: visible
+        // .slick-list 
+        //     overflow: visible!important
+        // .slick-slide 
+        //     opacity: 0
+        //     transition: opacity 0.5s
+        // .slick-slide.slick-active 
+        //     opacity: 1

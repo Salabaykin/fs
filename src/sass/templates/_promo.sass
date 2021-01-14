@@ -3,16 +3,47 @@
     &__container
         margin: auto
         max-width: 1530px
+        position: relative
+        &::after
+            content: ''
+            position: absolute
+            z-index: 10
+            bottom: -60px
+            left: 220px
+            width: 215px
+            height: 118px
+            background: url('../images/flower.png')
+            background-repeat: no-repeat
+        .swiper-button-next:after, 
+        .swiper-button-prev:after
+            display: none
+        .swiper-button-next, 
+        .swiper-button-prev
+            width: 73px
+            height: 73px
+            border: 2px solid #f2f7f9
+            border-radius: 50%
+            outline: none
+            user-select: none
+            -webkit-user-select: none
+            -moz-user-select: none
+            -ms-user-select: none
+        .swiper-button-next
+            right: -36px
+        .swiper-button-prev
+            left: -36px
     &-item
         padding-top: 145px 
         padding-bottom: 120px
         &__title 
-            width: 420px
+            width: 450px
             color: #ffffff
             font-family: 'Oranienbaum'
             font-size: 48px
+            text-transform: uppercase
             line-height: 60px
         &__descr
+            width: 450px
             margin-top: 30px
             color: #ffffff
             font-size: 18px
@@ -31,16 +62,3 @@
         &__btn
             padding-left: 80px
             padding-right: 80px
-        .swiper-button-next:after, 
-        .swiper-button-prev:after
-            display: none
-        .swiper-button-next, 
-        .swiper-button-prev
-            width: 73px
-            height: 73px
-            border: 2px solid #f2f7f9
-            border-radius: 50%
-        .swiper-button-next
-            right: -36px
-        .swiper-button-prev
-            left: -36px

@@ -1,0 +1,24 @@
+.breadcrumbs
+    padding-top: 40px
+    &__list
+        display: flex
+        li 
+            position: relative
+            margin-right: 20px
+            padding-right: 35px
+            &::before
+                content: ''
+                position: absolute
+                top: 50% 
+                transform: translateY(-50%)
+                right: 0
+                width: 15px
+                height: 7px
+                background: url('../images/icons/breadcrumbs-arrow.svg')
+                background-repeat: no-repeat
+            a 
+                color: $d-primary
+            &:last-child
+                &::before
+                    display: none
+                

@@ -2,6 +2,19 @@
     position: relative
     padding: 80px 0 60px 0
     background-color: $primary
+    background-image: url('../images/mono-bg-left.svg')
+    background-repeat: no-repeat
+    background-size: 33%
+    background-position: 0% 10%
+    &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 630px
+        height: 317px
+        background: url('../images/mono-bg-right.svg')
+        background-repeat: no-repeat
     &::before
         content: ''
         position: absolute

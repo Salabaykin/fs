@@ -1,0 +1,95 @@
+.content
+    margin-top: 45px
+    margin-bottom: 30px
+    display: flex
+    &-left,
+    &-right
+        position: relative
+        width: 50%
+    &-right
+        padding-top: 40px
+        padding-left: 50px
+        padding-right: 50px
+        background-color: #ffffff
+        border-radius: 0 30px 30px 0
+
+.photo-slider
+    .photo-slider__item.slick-slide
+        outline: none
+        user-select: none
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+    &__item
+        display: flex
+        justify-content: center
+        height: 570px
+        box-shadow: 0 0 32px rgba(3, 22, 29, 0.08)
+        background-color: #171718
+        border-radius: 30px 0 0 30px
+        img 
+            margin: auto
+    &-nav
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 37px
+        width: 60px
+        display: flex
+        flex-direction: column
+        &__item
+            margin-bottom: 20px
+            width: 60px
+            height: 60px !important
+            overflow: hidden
+            border-radius: 12px
+            background-color: $d-primary
+            cursor: pointer
+            outline: none
+            user-select: none
+            -webkit-user-select: none
+            -moz-user-select: none
+            -ms-user-select: none
+            img 
+                width: 100%
+                margin: auto
+        .photo-slider-nav__item.slick-slide
+            border: 2px solid $d-primary
+        .slick-slide.slick-current.slick-active
+            border: 2px solid #ffffff
+        .slick-arrow
+        .slick-arrow.slick-prev,
+        .slick-arrow.slick-next
+            outline: none
+            user-select: none
+            -webkit-user-select: none
+            -moz-user-select: none
+            -ms-user-select: none
+            position: relative
+            width: 60px
+            height: 60px
+            border-radius: 12px
+            border: 2px solid #7297a4
+            background-color: transparent 
+            font-size: 0
+            cursor: pointer
+            &::before
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                width: 13px
+                height: 6px
+        .slick-arrow.slick-prev
+            margin-bottom: 20px
+            &::before
+                background: url('../images/icons/photo-slider-arrow.svg')
+                background-size: cover 
+        .slick-arrow.slick-next
+            &::before
+                background: url('../images/icons/photo-slider-arrow.svg')
+                transform: translate(-50%, -50%) rotate(180deg)
+                background-size: cover 
+
+                        

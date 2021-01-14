@@ -20,7 +20,7 @@
             position: relative
             a 
                 display: block
-                padding: 20px 23px
+                padding: 20px
                 color: $txt
                 font-size: 16px
                 font-weight: 500
@@ -28,31 +28,60 @@
                 text-transform: uppercase
             &:hover
                 background-color: $primary
+                .main-nav__dropdown, 
+                .main-nav__dropdown-f
+                    display: flex
+    &__item
+        position: relative
+        z-index: 5
+        width: 185px
+        display: inline-block
+        border-top: 1px solid #d9e7ec
+        &:first-child
+            border-top: none 
+        &:hover
+            background-color: #e9f2f5
+    &__link
+        text-transform: none !important
+        color: $txt
+        font-size: 16px
+        font-weight: 600 !important
     &__dropdown
         display: none
         flex-direction: column
         flex-wrap: wrap
         position: absolute
-        top: 54px
+        top: 56px
         left: 0
         padding: 10px 20px
-        max-height: 188px
+        height: 195px
         box-shadow: 0 0 32px rgba(3, 22, 29, 0.08)
         background-color: #ffffff
-        li 
-            width: 210px
-            &:hover
-                background-color: #e9f2f5
+        &-f
+            width: 500px
+            .main-nav__item 
+                margin-right: 60px
+                &:last-child
+                    margin-right: 0
+                    border-top: none
+                    border-bottom: 1px solid #d9e7ec
             &::after
                 content: ''
                 position: absolute
                 bottom: 0
-                width: 100%
-                height: 1px
-                background-color: #d9e7ec
-            a 
-                margin: 0 20px
-                text-transform: none
-                color: #000000
-                font-size: 16px
-                font-weight: 600
+                right: 30px
+                background: url('../images/dropdown-bg.png')
+                background-repeat: no-repeat
+                width: 179px
+                height: 104px
+            &::before
+                content: ''
+                position: absolute
+                top: 40px
+                right: 51%
+                background: #d9e7ec
+                width: 1px
+                height: 95px
+
+.main-nav__list li.active 
+    background-color: $primary
