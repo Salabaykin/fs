@@ -23,5 +23,10 @@ document.addEventListener("DOMContentLoaded", function() {
     spaceBetween: 30,
   });
 
+  $('.compositions-slider').slick({
+    slidesToShow: 3,
+    speed: 10,
+    fade: false,
+  });
 });
 
