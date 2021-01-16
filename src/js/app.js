@@ -45,8 +45,28 @@ document.addEventListener("DOMContentLoaded", function() {
     dots: false,
     infinite: false,
     vertical: true,
-    //centerMode: true,
     focusOnSelect: true
+  });
+
+  // Amount
+  const basketAmount = document.querySelectorAll('.amount');
+  basketAmount.forEach(item => {
+    const input = item.querySelector('.amount__input');
+    input.value = 1;
+    item.addEventListener('click', (event) => {
+      const target = event.target;
+      let count = input.value;
+      if (target.closest('.amount__btn-plus')) {
+        if (count < 999) {
+          count++;
+        }
+      } else if (target.closest('.amount__btn-minus')) {
+        if (count != '0') {
+          count--;
+        } 
+      } 
+      input.value = count;
+    });
   });
 });
 

@@ -1,17 +1,204 @@
 .content
-    margin-top: 45px
-    margin-bottom: 30px
     display: flex
+    margin-bottom: 30px
     &-left,
     &-right
         position: relative
         width: 50%
     &-right
-        padding-top: 40px
-        padding-left: 50px
+        display: flex
+        flex-direction: column
+        padding-top: 33px
+        padding-left: 57px
         padding-right: 50px
         background-color: #ffffff
         border-radius: 0 30px 30px 0
+    &__title
+        margin-bottom: 10px
+        color: $txt
+        font-family: 'Oranienbaum'
+        font-size: 36px
+        letter-spacing: 1.75px
+    &-price
+        display: flex
+        align-items: center
+        margin-bottom: 25px
+        &__new 
+            color: $txt
+            font-size: 24px
+            font-weight: 600
+            line-height: 20px
+        &__old
+            padding-left: 23px
+            color: $txt
+            font-size: 18px
+            line-height: 20px
+            text-decoration: line-through
+    &-sale
+        margin-left: 35px
+    &-amount
+        padding-bottom: 20px
+        border-bottom: 1px solid #d8e5ea
+        span 
+            margin-right: 30px
+    &-size
+        margin-top: 20px
+        margin-bottom: 30px
+        &__title
+            margin-bottom: 10px
+            color: #000101
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+        &__wrap
+            display: flex
+            align-items: center
+        &__item
+            margin-right: 10px
+            display: flex
+            &:last-child
+                margin-right: 0
+            label
+                padding: 13px 14px
+                border: 1px solid $primary
+                border-radius: 12px
+                cursor: pointer
+                transition: all 0.2s
+                span 
+                    margin-right: 9px
+                    font-weight: 600
+                    text-align: center
+                &:hover
+                    background-color: $d-primary
+                    color: #ffffff
+            input[type="radio"]:checked + label 
+                border: 1px solid $d-primary
+                background-color: $d-primary
+                color: #ffffff
+                transition: all 0.2s
+            input[type="radio"] 
+                position: absolute
+                opacity: 0
+    &-basket
+        display: flex
+        justify-content: space-between
+        padding-bottom: 30px
+        border-bottom: 1px solid #d8e5ea
+        &__btn
+            padding: 13px 30px
+            padding-left: 55px
+            margin-right: 10px
+            font-size: 14px
+            font-weight: 600
+            text-transform: uppercase
+            &::before 
+                left: 20px
+                width: 25px
+                height: 22px
+                background-size: cover 
+            &--buy
+                padding: 5px 29px
+                font-size: 14px
+                font-weight: 600
+                text-transform: uppercase
+    &-share
+        margin-top: 28px
+        margin-bottom: 28px
+        display: flex
+        align-items: center
+        &__item
+            margin-right: 20px
+            width: 24px
+            height: 24px
+            &:last-child
+                margin-right: 0
+            a
+                display: block
+                width: 24px
+                height: 24px
+    &-descr
+        display: flex
+        align-items: flex-start
+        &__composition, 
+        &__color, 
+        &__text
+            padding: 25px 30px
+            background: #ffffff
+            box-shadow: 0 0 32px rgba(3, 22, 29, 0.08)
+            border-radius: 30px
+        &__composition
+            background: $d-primary
+            .content-descr__item
+                label
+                    border: 1px solid #acc9d4
+                    color: #ffffff
+                    &:hover
+                        border: 1px solid #ffffff
+                input[type="checkbox"]:checked + label 
+                    border: 1px solid #ffffff
+                    background-color: #ffffff
+                    color: #000000
+        &__composition, 
+        &__color, 
+            margin-right: 30px
+            width: 24%
+        &__text
+            width: 50%
+        &__title
+            padding-bottom: 20px
+            border-bottom: 1px solid #d8e5ea
+            color: #000000
+            font-size: 18px
+            font-weight: 600
+            line-height: 24px
+            text-transform: uppercase
+            &--white
+                color: #ffffff
+        &__wrap
+            margin-top: 30px
+            display: flex
+            flex-wrap: wrap
+            p 
+                margin-bottom: 30px
+                color: #000000
+                font-size: 16px
+                font-weight: 400
+                line-height: 24px
+                &:last-child
+                    margin-bottom: 0
+        &__item
+            margin: 0 4px
+            margin-bottom: 9px
+            display: flex
+            &:last-child
+                margin-right: 0
+            label
+                padding: 10px 13px
+                border: 1px solid $primary
+                border-radius: 12px
+                cursor: pointer
+                transition: all 0.2s
+                color: #000000
+                font-size: 16px
+                font-weight: 500
+                line-height: 24px
+                span 
+                    display: inline-block
+                    margin-right: 15px
+                    border-radius: 50%
+                    width: 12px
+                    height: 12px
+                &:hover
+                    background-color: $d-primary
+                    color: #ffffff
+            input[type="checkbox"]:checked + label 
+                border: 1px solid $d-primary
+                background-color: $d-primary
+                color: #ffffff
+                transition: all 0.2s
+            input[type="checkbox"] 
+                position: absolute
+                opacity: 0
 
 .photo-slider
     .photo-slider__item.slick-slide
