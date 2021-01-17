@@ -1,23 +1,39 @@
 .categories
-    &__title
-        margin-top: 45px
-        margin-bottom: 58px
-        color: $txt
-        font-family: 'Oranienbaum'
-        font-size: 36px
-        text-transform: uppercase
-        letter-spacing: 0.25px
-        line-height: normal
     &__wrap
+        position: relative
+        z-index: 1
         display: flex
+        // &::after
+        //     content: ''
+        //     position: absolute
+        //     top: 0
+        //     right: -330px
+        //     width: 974px
+        //     height: 708px
+        //     background: url('../images/categories-bg.svg')
+        //     background-size: cover 
+        //     z-index: -1
+    &-content-bg
+        position: absolute
+        top: 200px
+        right: 50%
+        transform: translateX(90%)
+        width: 974px
+        height: 708px
+        background-image: url('../images/categories-bg.svg')
     &-nav
         width: 250px
     &-list
+        margin-bottom: 90px
         margin-left: 20px
-        display: flex
-        flex-wrap: wrap
         flex: 1
+        &__wrap
+            display: flex
+            flex-wrap: wrap
     &-item
         width: 30%
         margin-left: 30px
         margin-bottom: 30px
+    &-pagination
+        margin-left: 30px
+        margin-top: 10px

@@ -1,0 +1,97 @@
+.accordion
+    &-item
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+        &__header 
+            position: relative
+            padding: 12px 20px
+            position: relative
+            border-left: 2px solid $primary
+            color: $txt
+            font-size: 17px
+            font-weight: 600
+            text-transform: uppercase
+            cursor: pointer
+            &::after
+                content: ''
+                position: absolute
+                top: 50% 
+                transform: translateY(-50%) rotate(180deg)
+                right: 0
+                width: 13px
+                height: 6px
+                background: url('../images/icons/accordion-arrow.svg')
+                background-repeat: no-repeat
+        &__content 
+            visibility: hidden
+            max-height: 0
+            opacity: 0
+
+.accordion-item.show .accordion-item__content 
+    padding: 15px 20px
+    border-top: 0
+    visibility: visible
+    max-height: 100%
+    opacity: 1
+
+.accordion-item.show .accordion-item__header 
+    &::after
+        transform: translateY(-50%) rotate(0deg)
+    
+.accordion-sub
+    &-item
+        margin-bottom: 26px
+        &:last-child
+            margin-bottom: 0
+        &__header 
+            color: $txt
+            font-size: 16px
+            font-weight: 600
+            cursor: pointer
+        &__content 
+            visibility: hidden
+            max-height: 0
+            opacity: 0
+            ul 
+                li 
+                    position: relative
+                    margin-bottom: 15px
+                    padding-left: 13px
+                    &::before
+                        content: ''
+                        position: absolute
+                        top: 50% 
+                        transform: translateY(-50%)
+                        left: 0
+                        width: 5px
+                        height: 5px
+                        border-radius: 50%
+                        background: $d-primary
+                        opacity: 0
+                        transition: all 0.2s
+                    &:hover
+                        &::before
+                            opacity: 1
+                        a 
+                            color: $d-primary
+                    a 
+                        transition: all 0.2s
+                        color: $txt
+                        font-size: 16px
+                li.active 
+                    &::before
+                        opacity: 1
+                    a
+                        color: $d-primary
+
+.accordion-sub-item.show .accordion-sub-item__content 
+    margin-top: 20px
+    margin-left: 10px
+    border-top: 0
+    visibility: visible
+    max-height: 100%
+    opacity: 1
+
+.accordion-sub-item.show .accordion-sub-item__header 
+    color: $d-primary

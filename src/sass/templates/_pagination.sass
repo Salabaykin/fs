@@ -1,0 +1,52 @@
+.pagination
+    &__wrap
+        padding: 25px
+        background: #ffffff
+        box-shadow: 0 0 32px rgba(3, 22, 29, 0.08)
+        border-radius: 30px
+    &-list
+        display: flex
+        align-items: center
+        justify-content: center
+        li 
+            margin-right: 20px
+            &:last-child
+                margin-right: 0
+            a 
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 40px
+                height: 40px
+                border-radius: 50%
+                background: #f2f7f9
+                color: #7297a4
+                font-size: 20px
+                font-weight: 500
+                line-height: 1
+                transition: all 0.2s
+                &:hover
+                    background: $d-primary
+                    color: #ffffff
+            .pagination-prev,
+            .pagination-next 
+                position: relative
+                background: transparent
+                &:hover
+                    background: transparent
+            .pagination-prev 
+                margin-right: 30px
+                i 
+                    width: 10px
+                    height: 18px
+                    background: url('../images/icons/pagination-prev.svg')
+            .pagination-next 
+                margin-left: 30px
+                i 
+                    width: 10px
+                    height: 18px
+                    background: url('../images/icons/pagination-next.svg')
+
+.pagination-list li a.active 
+    background: $d-primary
+    color: #ffffff

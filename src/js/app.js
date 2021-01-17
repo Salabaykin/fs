@@ -68,5 +68,96 @@ document.addEventListener("DOMContentLoaded", function() {
       input.value = count;
     });
   });
-});
 
+  // Accordion
+  class Accordion {
+    constructor(id, header) {
+      this.header = header;
+      this.id = id;
+      this.render();
+    }
+    render() {
+      function initAccordion(element, header) {
+        const mainElement = document.querySelector(element);
+        function actionClick(e) {
+          if (!e.target.classList.contains(header)) {
+            return;
+          }
+          e.preventDefault();
+          const headerHead = e.target;
+          const item = headerHead.parentElement;
+          item.classList.toggle('show');
+        };
+        function setupListeners() {
+          mainElement.addEventListener('click', actionClick);
+        }
+        if (mainElement) {
+          setupListeners();
+        }
+      }
+      initAccordion(this.id, this.header);
+    }
+  }
+  const accordion = new Accordion('#accordion', 'accordion-item__header');
+  const subAccordion = new Accordion('#accordion', 'accordion-sub-item__header');
+
+  // Map 
+  var myMap;
+  if (document.querySelector('#map')) {
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+              center: [51.7742298, 55.1607128],
+              zoom: 13
+          }, {
+              searchControlProvider: 'yandex#search'
+          }),
+  
+          // Создаём макет содержимого.
+          MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+              '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+          ),
+  
+          myPlacemark = new ymaps.Placemark([51.7610583, 55.1058789], {
+              hintContent: 'ул. Правды, 25, г. Оренбург',
+              balloonContent: 'ул. Правды, 25, г. Оренбург'
+          }, {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+              // Своё изображение иконки метки.
+              iconImageHref: 'images/icons/marker.png',
+              // Размеры метки.
+              iconImageSize: [84, 70],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-5, -38]
+          }),
+  
+          myPlacemarkWithContent = new ymaps.Placemark([51.7828353, 55.2160644], {
+              hintContent: 'г. Оренбург, п. Ростоши, ул. Газпромовская, 63',
+              balloonContent: 'г. Оренбург, п. Ростоши, ул. Газпромовская, 63',
+              iconContent: '12'
+          }, {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#imageWithContent',
+              // Своё изображение иконки метки.
+              iconImageHref: 'images/icons/marker.png',
+              // Размеры метки.
+              iconImageSize: [84, 70],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-24, -24],
+              // Смещение слоя с содержимым относительно слоя с картинкой.
+              iconContentOffset: [15, 15],
+              // Макет содержимого.
+              iconContentLayout: MyIconContentLayout
+          });
+  
+      myMap.geoObjects
+          .add(myPlacemark)
+          .add(myPlacemarkWithContent);
+    });
+  }
+
+});

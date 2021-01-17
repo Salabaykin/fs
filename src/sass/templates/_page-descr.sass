@@ -1,0 +1,44 @@
+.page-descr
+    padding: 70px 0 150px 0
+    background: #ffffff
+    &__wrap
+        display: flex
+    &__img
+        position: relative
+        width: 50%
+        border-radius: 30px
+        background-color: #f2f7f9
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 30px
+        &::after
+            content: ''
+            position: absolute
+            bottom: -85px
+            right: 30px
+            width: 280px
+            height: 174px
+            background: url('../images/page-descr-flower.png')
+            background-repeat: no-repeat
+    &__txt
+        padding-left: 60px
+        width: 50%
+        p 
+            margin-bottom: 30px
+            color: #000000
+            font-size: 16px
+            line-height: 1.4
+            font-weight: 400
+            &:last-child
+                margin-bottom: 0
+    &__title
+        margin-bottom: 40px
+        color: $txt
+        font-family: 'Oranienbaum'
+        font-size: 36px
+        font-weight: 400
+        text-transform: uppercase
+        letter-spacing: 2px
+        line-height: normal
