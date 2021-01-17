@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Правда Цветы</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+
+            <div class="header__wrap">
+
+                <div class="logo">
+                    <img src="images/logo.svg" alt="Правда Цветы">
+                </div>
+
+                <div class="header-right">
+
+                    <div class="header-right-top">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li><a href="#">Доставка и оплата</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+    
+                    <div class="header-right-bottom">
+                        <div class="call-me">
+                            <a href="tel:+73532902202" class="call-me__tel">+7 (3532) 90-22-02</a>
+                            <a href="tel:+73532919119" class="call-me__tel">+7 (3532) 91-91-19</a>
+                            <button class="call-me__btn">Перезвоните мне</button>
+                        </div>
+                        <div class="header__inst">
+                            <a href="https://www.instagram.com/pravdacveti_oren/" target="_blank" rel="noopener noreferrer">
+                                <img src="images/icons/instagram.svg" alt="Instagram">
+                            </a>
+                        </div>
+                        <div class="header__exclusive">
+                            <button class="btn">Эксклюзивный букет</button>
+                            <div class="header__delivery-time">
+                                Ежедневная доставка цветов с 07:00 до 23:00
+                            </div>
+                        </div>
+                        <div class="header__basket">
+                            <a href="#" class="btn btn-basket">Товары: <span>1</span></a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.header-right -->
+
+            </div>
+            <!-- /.header__wrap -->
+
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li><a href="#">Букеты</a>
+                        <div class="main-nav__dropdown main-nav__dropdown-f">
+                            <div class="main-nav__item"><a href="#" class="main-nav__link">С герберами</a></div>
+                            <div class="main-nav__item"><a href="#" class="main-nav__link">С розами</a></div>
+                            <div class="main-nav__item"><a href="#" class="main-nav__link">С тюльпанами</a></div>
+                            <div class="main-nav__item"><a href="#" class="main-nav__link">Большие букеты</a></div>
+                        </div>
+                    </li>
+                    <li><a href="#">Моно букеты</a></li>
+                    <li><a href="#">Композиции и корзины</a></li>
+                    <li><a href="#">Цветы по поводу</a>
+                        <div class="main-nav__dropdown">
+                            <div class="main-nav__item"><a href="#" class="main-nav__link">Новый год</a></div>
+                            <div class="main-nav__item"><a href="#" class="main-nav__link">День мамы</a></div>
+                            <div class="main-nav__item"><a href="#" class="main-nav__link">8 марта</a></div>
+                        </div>
+                    </li>
+                    <li><a href="#">Комнатные цветы</a></li>
+                    <li><a href="#">Подарки</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <!-- /.container -->
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <div class="order__head">
+                <h1 class="main__title">Оформление заказа</h1>
+
+                <div class="order__back">
+                    <a href="#">Вернуться к корзине</a>
+                </div>
+                <!-- /.order__back -->
+            </div>
+
+            <div class="order__wrap">
+
+                <form action="#" class="order-form">
+
+                    <div class="order-details">
+                        <div class="order-details-left">
+                            <div class="order-details__title order-details__title--customer">Данные покупателя</div>
+        
+                            <div class="order-details__body">
+                                <div class="order-details__name order-details__input">
+                                    <label class="order-label" for="user-name">Имя*</label>
+                                    <input class="order-input" type="text" name="user-name" id="user-name" required>
+                                </div>
+                                <div class="order-details__phone order-details__input">
+                                    <label class="order-label" for="user-phone">Мобильный телефон*</label>
+                                    <input class="order-input" type="tel" name="user-phone" id="user-phone" required>
+                                </div>
+                                <div class="order-details__email order-details__input">
+                                    <label class="order-label" for="user-email">E-mail*</label>
+                                    <input class="order-input" type="email" name="user-email" id="user-email" required>
+                                </div>
+                                <div class="checkbox order-details__checkbox">
+                                    <input type="checkbox" name="customer-name" id="customer-name">
+                                    <label for="customer-name">Не сообщать получателю имя покупателя</label>
+                                </div>
+                                <div class="checkbox order-details__checkbox">
+                                    <input type="checkbox" name="delivery-sms" id="delivery-sms">
+                                    <label for="delivery-sms">Получить уведомление о доставке по СМС</label>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.order-details -->
+        
+                        <div class="order-details-right">
+                            <div class="order-details__title order-details__title--recipient">Данные получателя</div>
+        
+                            <div class="order-details__body">
+                                <div class="checkbox order-details__checkbox">
+                                    <input type="checkbox" name="use-customer-name" id="use-customer-name">
+                                    <label for="use-customer-name">Использовать данные покупателя</label>
+                                </div>
+                                <div class="order-details__name order-details__input">
+                                    <label for="recipient-name">Имя*</label>
+                                    <input type="text" name="recipient-name" id="recipient-name" required>
+                                </div>
+                                <div class="order-details__phone order-details__input">
+                                    <label for="recipient-phone">Мобильный телефон*</label>
+                                    <input type="tel" name="recipient-phone" id="recipient-phone" required>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.order-details -->
+                    </div>
+                    <!-- /.order-details -->
+
+                    <div class="order-delivery">
+                        <div class="order-delivery__title">Способ получения</div>
+
+                        <div class="order-tabs">
+                            <div class="order-tabs__list">
+                                <div class="order-tabs__link order-delivery-link active" data-count="tab-1">Доставка</div>
+                                <div class="order-tabs__link order-delivery-link" data-count="tab-2">Самовывоз</div>
+                            </div>
+                        
+                            <div class="order-tabs__body">
+                                <div id="tab-1" class="order-tabs__content order-delivery-content active">
+                                    Content Active
+                                </div>
+                                <div id="tab-2" class="order-tabs__content order-delivery-content">
+                                    2 tab
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.order-tabs -->
+
+                    </div>
+                    <!-- /.order-receive -->
+
+                </form>
+
+            </div>
+            <!-- /.order__wrap -->
+
+        </div>
+        <!-- /.container -->
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="container">
+                <div class="footer__wrap">
+
+                    <div class="footer-left">
+                        <div class="logo">
+                            <img src="images/icons/logo-white.svg" alt="Правда Цветы">
+                        </div>
+                        <div class="phones">
+                            <div class="phones__title">Телефоны:</div>
+                            <div class="phones__list">
+                                <a href="tel:+73532902202">+7 (3532) 90-22-02</a>
+                                <a href="tel:+73532919119">+7 (3532) 91-91-19</a>
+                            </div>
+                        </div>
+                        <div class="footer-soc">
+                            <div class="footer-soc__item">
+                                <div class="footer-soc__icon">
+                                    <a href="https://www.instagram.com/pravdacveti_oren/" target="_blank" rel="noopener noreferrer"><img src="images/icons/instagram.svg" alt="instagram"></a>
+                                </div>
+                                <div class="footer-soc__name">
+                                    <a href="https://www.instagram.com/pravdacveti_oren/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copy">
+                            © 2020 Все права защищены.
+                        </div>
+                    </div>
+        
+                    <div class="footer-right">
+                        <div class="footer-block">
+                            <div class="footer-right__title">
+                                Информация
+                            </div>
+                            <nav class="footer-nav">
+                                <ul class="footer-nav__list">
+                                    <li><a href="#">Доставка и оплата</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                    <li><a href="#">О компании</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                    <li><a href="#">Политика обработки персональных данных</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-block">
+                            <div class="footer-right__title">
+                                Цветы с доставкой
+                            </div>
+                            <nav class="footer-nav">
+                                <ul class="footer-nav__list">
+                                    <li><a href="#">Букеты</a></li>
+                                    <li><a href="#">Моно букеты</a></li>
+                                    <li><a href="#">Композиции и корзины</a></li>
+                                    <li><a href="#">Цветы по поводу</a></li>
+                                    <li><a href="#">Букеты по цвету</a></li>
+                                    <li><a href="#">Комнатные цветы</a></li>
+                                    <li><a href="#">Подарки</a></li>
+                                </ul>
+                            </nav>
+                            <a href="#" class="btn footer-right__btn">Эксклюзивный букет</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=f2d78244-7ca1-4693-90c4-cb2094456486" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

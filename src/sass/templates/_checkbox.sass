@@ -1,0 +1,42 @@
+.checkbox input[type="checkbox"]
+    display: none
+.checkbox label::before
+    content: ''
+    display: inline-block
+    height: 24px
+    width: 24px
+    border-radius: 6px
+    border: 1px solid #acc9d4
+    background-color: #ffffff
+.checkbox label::after 
+    content: ''
+    display: inline-block
+    height: 8px
+    width: 11px
+    border-left: 3px solid #7297a4
+    border-bottom: 3px solid #7297a4
+    transform: rotate(-45deg)
+.checkbox label 
+    position: relative
+    padding-left: 42px
+    line-height: 2.8
+    cursor: pointer
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+.checkbox label::before,
+.checkbox label::after 
+    position: absolute
+.checkbox label::before 
+    top: -3px
+    left: 0
+.checkbox label::after 
+    left: 7px
+    top: 3px
+.checkbox input[type="checkbox"] + label::after 
+    content: none
+.checkbox input[type="checkbox"]:checked + label::after 
+    content: ''
