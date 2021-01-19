@@ -1,0 +1,86 @@
+.feedback
+    padding-bottom: 90px
+    &__wrap
+        display: flex
+    &-list
+        width: 75% 
+        padding-right: 30px
+    &-right
+        width: 25%
+    &-item
+        margin-bottom: 20px
+        padding: 30px 30px 0 30px
+        border-radius: 30px
+        background-color: #ffffff
+        box-shadow: 0px 0px 32px 0px rgba(3, 22, 29, 0.08)
+        &:last-child
+            margin-bottom: 0
+        &__content
+            margin-bottom: 30px
+            p 
+                font-size: 18px
+                color: $txt
+                font-style: italic
+                line-height: 1.333
+        &__descr
+            display: flex
+            align-items: center
+            padding: 15px 0
+            border-top: 1px solid #d8e5ea
+        &__name, 
+        &__date
+            position: relative
+            padding-left: 35px
+            color: $txt
+            &::before
+                content: ''
+                position: absolute
+                top: 50% 
+                transform: translateY(-50%)
+                left: 0
+                height: 21px
+        &__name
+            &::before
+                width: 19px
+                background: url('../images/icons/user.png')
+                background-size: cover 
+        &__date
+            margin-left: 40px
+            &::before
+                width: 22px
+                background: url('../images/icons/date.png')
+                background-size: cover 
+    &-write
+        padding: 25px 30px
+        background: $d-primary
+        border-radius: 30px
+        height: 420px
+        &::after
+            content: ''
+            position: absolute
+            bottom: 0
+            right: 0
+            background: url('../images/')
+        &__icon
+            margin: auto
+            position: relative
+            margin-bottom: 15px
+            border-radius: 50%
+            background-color: #658c9a
+            width: 109px
+            height: 109px
+            &::before
+                content: ''
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                width: 62px
+                height: 46px
+                background: url('../images/icons/write.svg')
+                background-size: cover 
+        &__btn
+            width: 100%
+            
+
+
