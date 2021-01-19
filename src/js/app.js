@@ -196,4 +196,9 @@ document.addEventListener("DOMContentLoaded", function() {
     deliveryTabs.render();
   }
 
+  $('.date-input').datepicker({
+    language: "ru",
+    orientation: "bottom auto"
+  });
+
 });
