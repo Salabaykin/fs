@@ -203,9 +203,11 @@ document.addEventListener("DOMContentLoaded", function() {
     paymentTabs.render();
   }
 
-  $('.date-input').datepicker({
-    language: "ru",
-    orientation: "bottom auto"
-  });
+  if (document.querySelector('.date-input')) {
+    $('.date-input').datepicker({
+      language: "ru",
+      orientation: "bottom auto"
+    });
+  }
 
 });

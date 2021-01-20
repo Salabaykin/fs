@@ -1,0 +1,125 @@
+.basket
+    display: flex
+    align-items: flex-start
+    padding-bottom: 90px
+    &__list
+        width: 74%
+        margin-right: 30px
+        box-shadow: 0 0 32px rgba(3, 22, 29, 0.08)
+        border-radius: 30px
+        background-color: #ffffff
+    &-total
+        width: 36%
+    &-sale
+        position: absolute
+        padding: 15px 15px 15px 11px
+        top: 30px
+        left: 0
+        width: 67px
+        font-size: 17px
+        line-height: 1
+    &-delete
+        position: absolute
+        top: 30px
+        right: 30px
+        width: 30px
+        height: 30px
+        background-color: #acc9d4
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        line-height: 1
+        color: #ffffff
+        border: none
+        cursor: pointer
+    &-item
+        padding: 30px 80px
+        position: relative
+        display: flex
+        border-bottom: 1px solid #d8e5ea
+        &:last-child
+            border-bottom: none 
+    &__left
+        margin-right: 30px
+    &__img
+        position: relative
+        padding-bottom: 100%
+        overflow: hidden
+        width: 93px
+        height: 93px
+        border-radius: 8px
+        background-color: #f1f6f8
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            position: absolute
+            top: 0
+            left: 0
+            border-radius: 8px
+    &__title
+        margin-bottom: 20px
+        color: $txt
+        font-size: 18px
+        font-weight: 500
+    &__body
+        display: flex
+    &-price
+        margin-left: 55px
+        display: flex
+        align-items: center
+        &__new
+            color: $txt
+            font-size: 22px
+            font-weight: 600
+        &__old
+            margin-left: 40px
+            color: $txt
+            font-size: 18px
+            font-weight: 400
+            text-decoration: line-through
+    &-total
+        &__wrap 
+            position: relative
+            box-shadow: 0 0 32px rgba(3, 22, 29, 0.08)
+            background-color: #ffffff
+            border-radius: 0 0 30px 30px
+            &::before
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                height: 4px
+                width: 100%
+                background: $primary
+        &__head 
+            padding: 30px
+            display: flex
+            border-bottom: 1px solid #d8e5ea
+        &__bottom
+            padding: 30px
+        &__block
+            width: 150px
+        &__txt 
+            color: $txt
+            font-size: 16px
+            font-weight: 400
+        &__descr
+            margin-top: 15px
+            color: $txt
+            font-size: 18px
+            font-weight: 600
+        &__sum 
+            margin-bottom: 25px
+            color: $txt
+            font-size: 16px
+            font-weight: 600
+            text-transform: uppercase
+            text-align: center
+            span 
+                margin-left: 15px
+                font-size: 30px
+        &__btn
+            width: 100%
+
