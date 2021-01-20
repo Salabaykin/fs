@@ -195,6 +195,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const deliveryTabs = new Tabs(deliveryTabLinks, deliveryTabContent);
     deliveryTabs.render();
   }
+  // Payment tabs
+  const paymentTabLinks = document.querySelectorAll('.payment-tabs__link'),
+        paymentTabContent = document.querySelectorAll('.payment-tabs__content');
+  if (paymentTabLinks && paymentTabContent) {
+    const paymentTabs = new Tabs(paymentTabLinks, paymentTabContent);
+    paymentTabs.render();
+  }
 
   $('.date-input').datepicker({
     language: "ru",

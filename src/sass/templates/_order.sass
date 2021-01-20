@@ -4,6 +4,8 @@
         display: flex
         justify-content: space-between
         align-items: center
+    &__wrap 
+        padding-bottom: 90px
     &__back
         position: absolute
         top: 50% 
@@ -184,5 +186,207 @@
         width: 330px
         position: relative
         
+.order-delivery-time
+    display: flex
+    &__left 
+        width: 330px
+    &__right
+        margin-left: 50px
+    &__radio
+        margin-bottom: 10px
+    &__input
+        display: flex
+    &__amount
+        display: flex
+        align-items: center
+        &:nth-child(2)
+            margin-left: 30px
 
+.services
+    margin-bottom: 50px
+    &__title
+        position: relative
+        margin-bottom: 40px
+        padding-left: 70px
+        color: $txt
+        font-size: 18px
+        font-weight: 600
+        text-transform: uppercase
+        &::before
+            content: ''
+            position: absolute
+            top: 50% 
+            transform: translateY(-50%)
+            left: 0
+            width: 40px
+            height: 55px
+            background: url('../images/icons/services-icon.svg')   
+            background-size: cover 
+    &-item
+        display: flex
+        &__price
+            margin-left: 35px
+            color: $txt
+            font-size: 16px
+            font-weight: 500
+    &__checkbox
+        width: 420px
+
+.total-cost
+    padding: 50px 70px
+    box-shadow: 0 0 32px rgba(3, 22, 29, 0.08)
+    border-radius: 30px
+    background-color: #ffffff
+    &__head
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-bottom: 25px
+        border-bottom: 1px solid #d8e5ea
+    &__title 
+        color: $txt
+        font-size: 18px
+        font-weight: 600
+        text-transform: uppercase
+    &__sum 
+        color: $txt
+        font-size: 30px
+        font-weight: 600
+        line-height: 1
+    &__wrap
+        padding-top: 30px
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+    &__item
+        margin-bottom: 20px
+        display: flex
+        align-items: center
+        &:last-child
+            margin-bottom: 0
+    &__name
+        width: 210px
+        margin-right: 45px
+        color: $txt
+        font-size: 16px
+        font-weight: 500
+    &__price 
+        width: 150px
+        color: $txt
+        font-size: 16px
+        font-weight: 450
+
+.comment
+    margin-top: 50px
+    &__title 
+        position: relative
+        margin-bottom: 40px
+        padding-left: 70px
+        color: $txt
+        font-size: 18px
+        font-weight: 600
+        text-transform: uppercase
+        &::before
+            content: ''
+            position: absolute
+            top: 50% 
+            transform: translateY(-50%)
+            left: 0
+            width: 55px
+            height: 48px
+            background: url('../images/icons/message.svg')   
+            background-size: cover 
+    &__message
+        width: 100%
+        padding-left: 70px
+        textarea
+            width: 100%
+            padding: 10px
+            resize: none
+            overflow: auto
+            height: 86px
+            border-radius: 12px
+            border: 1px solid #acc9d4
+            background-color: #ffffff
     
+.payment
+    margin-top: 50px
+    &__title 
+        position: relative
+        margin-bottom: 40px
+        padding-left: 70px
+        color: $txt
+        font-size: 18px
+        font-weight: 600
+        text-transform: uppercase
+        &::before
+            content: ''
+            position: absolute
+            top: 50% 
+            transform: translateY(-50%)
+            left: 0
+            width: 53px
+            height: 53px
+            background: url('../images/icons/payment.svg')   
+            background-size: cover 
+    &__btn
+        margin-top: 25px
+    &-btn
+        width: 400px
+    &-receipt
+        margin-bottom: 40px
+        display: flex
+    &__radio
+        &:nth-child(1)
+            margin-right: 110px
+
+
+.pickup
+    &__wrap
+        display: flex
+    &__radio 
+        padding-right: 70px
+        padding-left: 70px
+        border-right: 1px solid #d8e5ea
+        &:first-child
+            padding-left: 0
+        &:last-child
+            padding-right: 0
+            border-right: none
+        label 
+            display: flex
+            line-height: 1.4 !important
+            padding-left: 60px !important
+    &__addr 
+        margin-bottom: 40px
+        color: $txt
+        font-size: 18px
+        font-weight: 600
+    &__tel
+        margin-bottom: 40px
+        span 
+            margin-bottom: 15px
+            display: block
+            color: $txt
+            font-size: 18px
+            font-weight: 600
+        a 
+            color: $txt
+            font-size: 16px
+            font-weight: 500
+    &__time 
+        span 
+            color: $txt
+            font-size: 18px
+            font-weight: 600
+    &__block
+        margin-top: 15px
+    &__w-time
+        .work-day
+            display: inline-block
+            width: 75px
+            font-weight: 400
+            color: $d-primary
+        .work-time
+            font-weight: 500
+

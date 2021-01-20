@@ -18,8 +18,9 @@
     transform: rotate(-45deg)
 .checkbox label 
     position: relative
+    display: flex
     padding-left: 42px
-    line-height: 2.8
+    padding-bottom: 25px
     font-weight: 500 
     cursor: pointer
     -webkit-touch-callout: none
@@ -28,6 +29,10 @@
     -moz-user-select: none
     -ms-user-select: none
     user-select: none
+    span 
+        a 
+            &:hover
+                color: $d-primary 
 .checkbox label::before,
 .checkbox label::after 
     position: absolute

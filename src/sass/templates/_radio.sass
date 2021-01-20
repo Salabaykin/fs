@@ -1,0 +1,42 @@
+.radio input[type="radio"]
+    display: none
+.radio label::before
+    content: ''
+    display: inline-block
+    height: 20px
+    width: 20px
+    border-radius: 50%
+    border: 1px solid #acc9d4
+    background-color: #ffffff
+.radio label::after 
+    content: ''
+    display: inline-block
+    height: 10px
+    width: 10px
+    border-radius: 50%
+    background: #7297a4
+.radio label 
+    position: relative
+    padding-left: 33px
+    line-height: 2.8
+    font-weight: 600 
+    cursor: pointer
+    -webkit-touch-callout: none
+    -webkit-user-select: none
+    -khtml-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+.radio label::before,
+.radio label::after 
+    position: absolute
+.radio label::before 
+    top: -2px
+    left: 0
+.radio label::after 
+    left: 5px
+    top: 3px
+.radio input[type="radio"] + label::after 
+    content: none
+.radio input[type="radio"]:checked + label::after 
+    content: ''
